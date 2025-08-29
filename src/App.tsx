@@ -23,7 +23,6 @@ const App = () => {
     "bc-data",
     getBCdata
   );
-  console.log("reftach", refetch);
   useEffect(() => {
     const interval = setInterval(refetch, INTERVAL_TIME);
     return () => clearInterval(interval);
